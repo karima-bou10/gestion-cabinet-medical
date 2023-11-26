@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DoctorDashboardController">
+   <children>
+      <AnchorPane prefHeight="668.0" prefWidth="730.0">
+         <children>
+            <HBox prefHeight="103.0" prefWidth="730.0" style="-fx-background-color: #ececec; -fx-background-radius: 10 0 0 10;">
+               <children>
+                  <Pane prefHeight="68.0" prefWidth="730.0">
+                     <children>
+                        <Label layoutX="48.0" layoutY="32.0" style="-fx-text-fill: black;" text="Dashboard">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="167.0" layoutY="127.0" prefHeight="103.0" prefWidth="426.0" style="-fx-background-color: #FF5757;">
+               <children>
+                  <Label layoutX="49.0" layoutY="20.0" prefHeight="32.0" prefWidth="329.0" text="Nombres des Rendez Vous" textFill="#260000">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rdvCount" layoutX="186.0" layoutY="52.0" prefHeight="39.0" prefWidth="54.0" text="120">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="167.0" layoutY="243.0" prefHeight="103.0" prefWidth="426.0" style="-fx-background-color: #FF5757;">
+               <children>
+                  <Label layoutX="49.0" layoutY="20.0" prefHeight="32.0" prefWidth="341.0" text="Nombres des Consultations" textFill="#260000">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="consultCount" layoutX="186.0" layoutY="52.0" prefHeight="39.0" prefWidth="54.0" text="120">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="167.0" layoutY="360.0" prefHeight="103.0" prefWidth="426.0" style="-fx-background-color: #FF5757;">
+               <children>
+                  <Label layoutX="49.0" layoutY="20.0" prefHeight="32.0" prefWidth="329.0" text="Nombres des Médicaments" textFill="#260000">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="medCount" layoutX="186.0" layoutY="52.0" prefHeight="39.0" prefWidth="54.0" text="120">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="167.0" layoutY="472.0" prefHeight="103.0" prefWidth="426.0" style="-fx-background-color: #FF5757;">
+               <children>
+                  <Label layoutX="49.0" layoutY="20.0" prefHeight="32.0" prefWidth="329.0" text="Nombres des Patients" textFill="#260000">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="patientCount" layoutX="186.0" layoutY="52.0" prefHeight="39.0" prefWidth="54.0" text="120">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
